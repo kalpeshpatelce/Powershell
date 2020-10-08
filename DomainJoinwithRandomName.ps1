@@ -65,7 +65,7 @@ $CompName.Rename($ComputerName)
 
 #Pass Domain Creds
 $username = "Electromech\kalpesh"
-$password = "Pr0ject" | ConvertTo-SecureString -AsPlainText -Force
+$password = "Password" | ConvertTo-SecureString -AsPlainText -Force
 $cred = New-Object -typename System.Management.Automation.PSCredential($username, $password)
 
 #Adding to domain
