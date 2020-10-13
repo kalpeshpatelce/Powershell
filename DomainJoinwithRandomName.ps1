@@ -47,13 +47,13 @@ if(($CompName.Name -like 'SRV*') -and ($CompName.Domain -like '*contoso*'))
    Write-Host "Name With SRV"
    LogMessage -Message "Name Start With SRV"
    Write-Host "PC Already in Contoso Domain..........Exit Program"
-   LogMessage -Message "PC Already in gtu Domain..........Exit Program"
+   LogMessage -Message "PC Already in Contoso Domain..........Exit Program"
  #break
 }    
 else
 {
    Write-Host "PC Name Does not Contain SRV Word so Process For Change Name"
-   LogMessage -Message "PC Name Does not Contain GTU Word so Process For Change Name"
+   LogMessage -Message "PC Name Does not Contain SRV Word so Process For Change Name"
 
 #Get Date in 131020101025 format to generate Computer Name
    $GetDateTime=Get-date -Format "ddMMyyHHMMss"
