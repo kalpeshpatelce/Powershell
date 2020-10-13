@@ -1,10 +1,11 @@
+<powershell>
 #this is AWS USERDATA Script used for
 #if You want to add server in Domain with New name basically used in Autoscalling in AWS
 
 #Please Change Parameter
 #$username.$password,Domainip,SERVERTP,
 #Replace contoso.com to your Domain
-<powershell>
+
 Set-ExecutionPolicy unrestricted -Force
 
 #set DNS IP To ADD Server in Domain
