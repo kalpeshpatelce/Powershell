@@ -23,3 +23,9 @@ Get-EventLog -LogName Security -InstanceId 4634 | Where-Object {$_.TimeGenerated
 ```
 ![image](https://github.com/kalpeshpatelce/Powershell/assets/13175900/47e4c261-c0b4-4bb3-b73f-80ea7990a9a6)
 
+## Get PowerOn Hours of HDD
+```
+Get-Disk | Get-StorageReliabilityCounter
+Get-Disk | Get-StorageReliabilityCounter | Select-Object -Property "*"
+```
+![image](https://github.com/kalpeshpatelce/Powershell/assets/13175900/2f0e449a-ae4f-43ba-95a3-a7522874e180)
