@@ -10,3 +10,16 @@
 ```
 sc.exe config CharusatApps start= delayed-auto
 ```
+## Get Users Login and Logoff on Windows PC
+## Login Event
+```
+Get-EventLog -LogName Security -InstanceId 4624 | Where-Object {$_.TimeGenerated -ge (Get-Date '2024-02-14')} | Format-Table
+```
+![image](https://github.com/kalpeshpatelce/Powershell/assets/13175900/cd062e46-9bf7-41cb-9c4b-2ccc519b1e53)
+
+## Logout Event
+```
+Get-EventLog -LogName Security -InstanceId 4634 | Where-Object {$_.TimeGenerated -ge (Get-Date '2024-02-14')} | Format-Table
+```
+![image](https://github.com/kalpeshpatelce/Powershell/assets/13175900/47e4c261-c0b4-4bb3-b73f-80ea7990a9a6)
+
